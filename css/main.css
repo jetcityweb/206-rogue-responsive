@@ -17,7 +17,7 @@ body {
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -35,7 +35,7 @@ h4 {
 }
 h1 {
 	font-size: 1.875em;
-	width: 85%;
+	width: 90%;
 	text-align: center;
 }
 h2 {
@@ -57,7 +57,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	height: auto;
-	width: 100%;
+	width: 90%;
 	/* border-bottom: 3px solid #77a466; */
 	margin: 0 auto;
 	display: flex;
@@ -117,11 +117,16 @@ header nav ul li a{
 	margin: 0 auto;
 	clear: both;
 	display: flex;
+	width: 100%;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	/* text-align: center; */
 }
+
+/* .bottom-section {
+	border-top: 1px solid #eeeeee;
+} */
 
 .main {
 	display: flex;
@@ -132,20 +137,21 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	width: 85%;
+	width: 90%;
 
 	
 	/* float: left; */
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
 	height: auto;
-	width: 85%;
+	width: 90%;
+
 	/* float: left; */
 }
 .main-title h3 {
@@ -162,10 +168,11 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 85%;
+	width: 90%;
 	height: auto;
-	/* float: left; */
 	border-top: 1px solid #eeeeee;
+	/* float: left; */
+	
 }
 
 .section-one h4 {
@@ -210,7 +217,7 @@ footer {
 	clear: both;
 	text-align: center;
 	display: flex;
-	width: 85%;
+	width: 90%;
 	justify-content: center;
 	align-items: center;
 }
@@ -219,4 +226,79 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/* Responsive breakpoints */
+
+/* Tablet styles */
+@media all and (min-width:768px) {
+	.bottom-section {
+		align-items: flex-start;
+		width: 100%;
+	}
+	.section-one {
+		width: 30%;
+
+	}
+	.section-two {
+		width: 30%;
+		justify-content: center;
+		border-left: 1px solid #eeeeee;
+		border-right: 1px solid #eeeeee;
+	}
+	
+	.section-two p {
+		width: 90%;
+		padding-left: 15px;
+		
+	}
+	
+	.section-two h4 {
+		padding-left: 15px;
+	}
+	.section-three {
+		width: 30%;
+
+	}
+	.section-three h4 {
+		padding-left: 15px;
+	}
+	
+	.section-three p {
+		padding-left: 15px;
+	
+}
+
+/* Desktop styles */
+
+@media all and (min-width:1200px) {
+	.section-one,
+	.section-two,
+	.section-three {
+		float: left;
+		
+	}
+	
+	header {
+		flex-flow: row;
+		justify-content: flex-start;
+	}
+	header h1 {
+		/* float: left; */
+
+
+		margin: 0;
+		padding: 38px 0;
+		border-bottom: 0;
+		text-align: left;
+	}
+	
+	header nav {
+		justify-content: flex-end;
+	}
+	
+
+	header nav ul li {
+		display: inline;
+	}
 }
