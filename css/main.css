@@ -35,6 +35,8 @@ h4 {
 }
 h1 {
 	font-size: 1.875em;
+	width: 85%;
+	text-align: center;
 }
 h2 {
     font-size: 1.5em;
@@ -130,7 +132,7 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	width: 75%;
+	width: 85%;
 
 	
 	/* float: left; */
@@ -143,7 +145,7 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	width: 75%;
+	width: 85%;
 	/* float: left; */
 }
 .main-title h3 {
@@ -160,7 +162,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 75%;
+	width: 85%;
 	height: auto;
 	/* float: left; */
 	border-top: 1px solid #eeeeee;
@@ -203,11 +205,12 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	height: 50px;
-	border-top: 3px solid #eee;
+	border-top: 3px solid #eeeeee;
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
 	display: flex;
+	width: 85%;
 	justify-content: center;
 	align-items: center;
 }
